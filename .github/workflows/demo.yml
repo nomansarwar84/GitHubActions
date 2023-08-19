@@ -6,5 +6,7 @@ jobs:
     steps:
       - name: Clonning
         run: git clone https://github.com/nomansarwar84/django-notes-app.git
-      - name: another-step
-        run: echo "I have a lot of work to do"
+      - name: Build
+        run: docker build . -t notes-app-latest
+      - name: Deploy
+        run: docker run -d -p 8000:8000 notes-app:latest
