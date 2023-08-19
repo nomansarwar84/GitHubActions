@@ -2,7 +2,9 @@ name: hello-world
 on: push
 jobs:
   my-job:
-    runs-on: amazon-linux
+    runs-on: ubuntu-latest
     steps:
       - name: my-step
         run: echo "Myself Noman Sarwar!"
+      - name: another-step
+        run: echo "I have a lot of work to do"
