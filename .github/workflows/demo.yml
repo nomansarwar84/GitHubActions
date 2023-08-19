@@ -4,7 +4,7 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
-        run: echo "Myself Noman Sarwar!"
+      - name: Clonning
+        run: git clone https://github.com/nomansarwar84/django-notes-app.git
       - name: another-step
         run: echo "I have a lot of work to do"
